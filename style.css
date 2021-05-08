@@ -1,0 +1,540 @@
+body {
+    /* font-family: "Inter", sans-serif; */
+    background: rgb(220, 204, 179);
+}
+.quote {
+    font-size: 150%;
+    font-family: Garamond, serif;
+}
+#cookie {
+  border-radius: 50%;
+  border-color: rgb(92, 50, 50);
+  border-style: solid;
+  border-width: 7px;
+  transition: transform 0.4s;
+}
+#cookie:hover {
+  transform: scale(1.2);
+}
+* {
+    box-sizing: border-box;
+  }
+  ul {
+    width: 100%;  
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 1px 10px;
+    background: #404040;
+    margin-right: 1%;
+    border-radius: 5px;
+  }
+  
+  li:hover {
+    background: #b0b0b0;
+  }
+  
+  li:hover a {
+    color: #000;
+  }
+  
+  .top {
+    text-decoration: none;
+    color: rgb(220, 204, 179);
+  }
+  
+  .slicknav_menu {
+    display: none;
+  }
+  
+.container {
+    display: grid;
+    height: 330vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "main main"
+        "cookie1 desc1"
+        "desc2 cookie2"
+        "cookie3 desc3"
+        "desc4 cookie4"
+        "cookie5 desc5"
+        "footer footer";
+    /* grid-gap: 0.2rem; */
+    font-weight: 800;
+    font-size: 12px;
+    color: rgb(92, 50, 50);
+    text-align: center;
+}
+  
+main {
+    background: rgb(220, 204, 179);
+    grid-area: main;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+main h1 {
+    display: inline;
+    margin-left: 5px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 20px;
+}
+#cookie1 {
+    background: rgb(255, 204, 179);
+    grid-area: cookie1;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#desc1 {
+  background: rgb(255, 204, 179);
+  grid-area: desc1;
+  text-align: left;
+  padding-top: 150px;
+  text-align: justify;
+  padding-right: 22%;
+  line-height: 1.5;
+  float: left;
+}
+
+#cookie2 {
+    background: rgb(255, 204, 179);
+    grid-area: cookie2;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#desc2 {
+  background: rgb(255, 204, 179);
+  grid-area: desc2;
+  text-align: right;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 50px;
+  line-height: 1.5;
+  float: right;
+}
+
+#cookie3 {
+  background: rgb(255, 204, 179);
+  grid-area: cookie3;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#desc3 {
+  background: rgb(255, 204, 179);
+  grid-area: desc3;
+  text-align: left;
+  padding-top: 100px;
+  padding-right: 10%;
+  line-height: 1.5;
+  float: left;
+}
+
+#cookie4 {
+  background: rgb(255, 204, 179);
+  grid-area: cookie4;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#desc4 {
+  background: rgb(255, 204, 179);
+  grid-area: desc4;
+  text-align: right;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 75px;
+  line-height: 1.5;
+  float: right;
+}
+
+#cookie5 {
+  background: rgb(255, 204, 179);
+  grid-area: cookie5;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 70px;
+}
+
+#desc5 {
+  background: rgb(255, 204, 179);
+  grid-area: desc5;
+  text-align: left;
+  padding-top: 100px;
+  padding-right: 20%;
+  line-height: 1.5;
+  float: left;
+}
+
+section {
+	width: 70%;  
+  margin: 0 auto;
+} 
+
+/* styling the image */
+section img {
+  width: 70%;
+  margin: 20px;
+}
+  
+  
+#content3 {
+    background: rgb(255, 204, 179);
+    grid-area: content3;
+    text-align: center;
+    padding-top: 5px;
+}
+#content3 a {
+    color: rgb(92, 50, 50);
+}
+  
+footer {
+    background: rgb(220, 204, 179);
+    grid-area: footer;
+    padding-top: 5px;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 3%;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 1.6em;
+  width: 50%;
+ }
+ 
+ input {
+   width: 100%;
+ }
+ 
+ button {
+   padding: 4px;
+   width: 100%;
+   border-radius: 2px;
+ }
+ button {
+  background: gray;
+  color: white;
+  border: 0;
+ }
+ button:hover {
+  background: darkslategray;
+}
+
+a {
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "main"
+        "cookie1"
+        "desc1"
+        "cookie2"
+        "desc2"
+        "cookie3"
+        "desc3"
+        "cookie4"
+        "desc4"
+        "cookie5"
+        "desc5"
+        "footer";
+    }
+    #menu {
+        display: none;
+      }
+      #cookie1 {
+        padding: none;
+      }
+      #cookie2 {
+        padding: none;
+      }
+      #cookie3 {
+        padding: none;
+      }
+      #cookie4 {
+        padding: none;
+      }
+      #cookie5 {
+        padding: none;
+      }
+      #desc1 {
+        padding: none;
+        text-align: center;
+        float:none;
+      }
+      #desc2 {
+        padding: none;
+        text-align: center;
+        float:none;
+      }
+      #desc3 {
+        padding: none;
+        text-align: center;
+        float:none;
+      }
+      #desc4 {
+        padding: none;
+        text-align: center;
+        float:none;
+      }
+      #desc5 {
+        padding-top: none;
+        padding-right: none;
+        text-align: center;
+        float:none;
+      }
+      .slicknav_menu {
+        display: block;
+        background-color: rgb(220, 204, 179) !important;
+      }
+    
+      .slicknav_menu,
+      .slicknav_menutxt {
+        font-family: "Raleway";
+      }
+    
+      .slicknav_nav .slicknav_row,
+      .slicknav_nav a {
+        display: block;
+        max-width: 100px;
+      }
+    
+      .slicknav_nav ul {
+        margin: 0 0 0 20px;
+        text-align: center;
+        justify-content: flex-end;
+      }
+    
+      ul {
+        justify-content: flex-end;
+        background: rgb(220, 204, 179);
+      }
+    
+      li {
+        padding: 2px 3px;
+        background: #000;
+        margin-right: 0;
+      }
+    
+      li:hover a {
+        background: #b0b0b0;
+      }
+    
+      a {
+        font-size: 1em;
+        display: block;
+      }
+    
+      a:hover {
+        background: #b0b0b0 !important;
+      }
+    
+      .top {
+        color: white !important;
+      }
+      .shop_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "main"
+          "cards"
+          "footer";
+        text-align: center;
+      }
+      .cards{
+        grid-area: cards;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgb(255, 204, 179);
+      }
+      
+      .card{
+        display: inline-block;
+        padding: 0px;
+      }
+      
+  }
+
+  .nutrients_container {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "main main"
+        "cookie1 cookie1"
+        "cookie2 cookie2"
+        "cookie3 cookie3"
+        "cookie4 cookie4"
+        "cookie5 cookie5"
+        "footer footer";
+    /* grid-gap: 0.2rem; */
+    font-weight: 800;
+    font-size: 12px;
+    color: rgb(92, 50, 50);
+    text-align: center;
+}
+
+#nutrients{
+  width: 25%;
+  margin: 20px;
+}
+
+.shop_container{
+  display: grid;
+  height: 150vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 2fr;
+  grid-template-areas:
+      "main main"
+      "cards cards"
+      "footer footer";
+  /* grid-gap: 0.2rem; */
+  font-weight: 800;
+  font-size: 12px;
+  color: rgb(92, 50, 50);
+  text-align: center;
+}
+.cards{
+  grid-area: cards;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(255, 204, 179);
+}
+
+.card{
+  display: inline-block;
+  padding: 2em;
+  margin: 2%;
+}
+
+
+.cards li {
+  display: inline-block;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+/* basic styling for a elements inside li elements */
+.cards li a {
+  color: rgb(220, 204, 179);
+  text-decoration: none;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* changing the background color of li elements when they are hovered over */
+.cards li:hover {
+  background: #b0b0b0;
+}
+
+/* changing the text color of a elements when their li elements are hovered over */
+.cards li:hover a {
+  color: #404040;
+}
+
+.contact_container {
+  display: grid;
+  height: 120vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 2fr 2fr;
+  grid-template-areas:
+      "main main"
+      "name1 name2"
+      "ig1 ig2"
+      "link1 link2"
+      "email email"
+      "footer footer";
+  /* grid-gap: 0.2rem; */
+  font-weight: 800;
+  font-size: 12px;
+  color: rgb(92, 50, 50);
+  text-align: center;
+}
+.contact {
+  grid-area: email;
+  background: rgb(255, 204, 179);
+  padding-top: 20%;
+  padding-bottom: 10%;
+  font-size: 150%;
+}
+.creator1 {
+  grid-area: name1;
+  background: rgb(255, 204, 179);
+  padding-top: 10%;
+  padding-left: 20%;
+  font-size: 180%
+}
+.creator2 {
+  grid-area: name2;
+  background: rgb(255, 204, 179);
+  padding-top: 10%;
+  padding-right: 20%;
+  font-size: 180%
+}
+.insta1 {
+  grid-area: ig1;
+  background: rgb(255, 204, 179);
+  padding-top: 10%;
+  padding-left: 20%;
+}
+.insta2 {
+  grid-area: ig2;
+  background: rgb(255, 204, 179);
+  padding-top: 10%;
+  padding-right: 20%;
+}
+.linkedin1 {
+  grid-area: link1;
+  background: rgb(255, 204, 179);
+  padding-top: 10%;
+  padding-left: 20%;
+}
+.linkedin2 {
+  grid-area: link2;
+  background: rgb(255, 204, 179);
+  padding-top: 10%;
+  padding-right: 20%;
+}
+a {
+  color: rgb(92, 50, 50);
+}
+a:hover {
+  opacity: 0.7;
+
+}
