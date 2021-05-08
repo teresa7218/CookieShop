@@ -1,11 +1,14 @@
+/* To change the body's background color. */
 body {
     /* font-family: "Inter", sans-serif; */
     background: rgb(220, 204, 179);
 }
+/* To size and decorate the quote on the footer*/
 .quote {
     font-size: 150%;
     font-family: Garamond, serif;
 }
+/* To make the cookies be circular and add a border. */
 #cookie {
   border-radius: 50%;
   border-color: rgb(92, 50, 50);
@@ -13,18 +16,21 @@ body {
   border-width: 7px;
   transition: transform 0.4s;
 }
+/* When hovered over the picture the picture get enlarged */
 #cookie:hover {
   transform: scale(1.2);
 }
+/* To change the whole website to border-box */
 * {
     box-sizing: border-box;
   }
+  /* To style the unordered list document */
   ul {
     width: 100%;  
     display: flex;
     justify-content: flex-end;
   }
-  
+  /* To change the list in the card and menu */
   li {
     display: inline-block;
     padding: 1px 10px;
@@ -32,24 +38,24 @@ body {
     margin-right: 1%;
     border-radius: 5px;
   }
-  
+  /* To change color when hover */
   li:hover {
     background: #b0b0b0;
   }
-  
+  /* To change the link's letter color when hover */
   li:hover a {
     color: #000;
   }
-  
+  /* To change the color of the link when normal */
   .top {
     text-decoration: none;
     color: rgb(220, 204, 179);
   }
-  
+  /* To make the display to be none when it is full screen */
   .slicknav_menu {
     display: none;
   }
-  
+  /* to declare basic layout for the home page by using css grid */
 .container {
     display: grid;
     height: 330vh;
@@ -69,7 +75,7 @@ body {
     color: rgb(92, 50, 50);
     text-align: center;
 }
-  
+/*To change the background color of the main information area and add spacing by using padding.*/
 main {
     background: rgb(220, 204, 179);
     grid-area: main;
@@ -77,27 +83,30 @@ main {
     padding-top: 5px;
     padding-bottom: 50px;
 }
-
+/* To style the header of the cookie description and any h1 elements in main. */
 main h1 {
     display: inline;
     margin-left: 5px;
     font-size: 40px;
     text-transform: uppercase;
 }
+/* To style the h2 elements */
 h2 {
   font-size: 30px;
   text-transform: uppercase;
 }
+/* To change the letter size of the paragraph elements */
 p {
   font-size: 20px;
 }
+/* To change the background color of the cookie picture and the nutrition picture and to add padding of the picture. */
 #cookie1 {
     background: rgb(255, 204, 179);
     grid-area: cookie1;
     text-align: center;
     padding-top: 70px;
 }
-
+/* To make the description of the cookie and make it align for better visualization. */
 #desc1 {
   background: rgb(255, 204, 179);
   grid-area: desc1;
@@ -108,14 +117,14 @@ p {
   line-height: 1.5;
   float: left;
 }
-
+/* To change the background color of the cookie picture and the nutrition picture and to add padding of the picture. */
 #cookie2 {
     background: rgb(255, 204, 179);
     grid-area: cookie2;
     text-align: center;
     padding-top: 5px;
 }
-
+/* To make the description of the cookie and make it align for better visualization. */
 #desc2 {
   background: rgb(255, 204, 179);
   grid-area: desc2;
@@ -126,14 +135,14 @@ p {
   line-height: 1.5;
   float: right;
 }
-
+/* To change the background color of the cookie picture and the nutrition picture and to add padding of the picture. */
 #cookie3 {
   background: rgb(255, 204, 179);
   grid-area: cookie3;
   text-align: center;
   padding-top: 5px;
 }
-
+/* To make the description of the cookie and make it align for better visualization. */
 #desc3 {
   background: rgb(255, 204, 179);
   grid-area: desc3;
@@ -143,14 +152,14 @@ p {
   line-height: 1.5;
   float: left;
 }
-
+/* To change the background color of the cookie picture and the nutrition picture and to add padding of the picture. */
 #cookie4 {
   background: rgb(255, 204, 179);
   grid-area: cookie4;
   text-align: center;
   padding-top: 5px;
 }
-
+/* To make the description of the cookie and make it align for better visualization. */
 #desc4 {
   background: rgb(255, 204, 179);
   grid-area: desc4;
@@ -161,7 +170,7 @@ p {
   line-height: 1.5;
   float: right;
 }
-
+/* To change the background color of the cookie picture and the nutrition picture and to add padding of the picture. */
 #cookie5 {
   background: rgb(255, 204, 179);
   grid-area: cookie5;
@@ -169,7 +178,7 @@ p {
   padding-top: 5px;
   padding-bottom: 70px;
 }
-
+/* To make the description of the cookie and make it align for better visualization. */
 #desc5 {
   background: rgb(255, 204, 179);
   grid-area: desc5;
@@ -179,7 +188,7 @@ p {
   line-height: 1.5;
   float: left;
 }
-
+/* To change the position of the section elements. */
 section {
 	width: 70%;  
   margin: 0 auto;
@@ -190,29 +199,18 @@ section img {
   width: 70%;
   margin: 20px;
 }
-  
-  
-#content3 {
-    background: rgb(255, 204, 179);
-    grid-area: content3;
-    text-align: center;
-    padding-top: 5px;
-}
-#content3 a {
-    color: rgb(92, 50, 50);
-}
-  
+/* To style the footer */
 footer {
     background: rgb(220, 204, 179);
     grid-area: footer;
     padding-top: 5px;
     text-align: center;
 }
-
+/* To style the footer quote */
 footer p {
     padding-top: 3%;
 }
-
+/* To style the form in contact page */
 form {
   margin-left: auto;
   margin-right: auto;
@@ -249,7 +247,7 @@ a {
     font-weight: bold;
     margin: 1rem;
 }
-  
+/* To change the layout when it is changed to phone or smaller screensize. */
   @media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
@@ -361,31 +359,9 @@ a {
       .top {
         color: white !important;
       }
-      .shop_container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-          "main"
-          "cards"
-          "footer";
-        text-align: center;
-      }
-      .cards{
-        grid-area: cards;
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background: rgb(255, 204, 179);
-      }
-      
-      .card{
-        display: inline-block;
-        padding: 0px;
-      }
-      
   }
-
+  
+/* To style the layout for the nutrient page */
   .nutrients_container {
     display: grid;
     height: 200vh;
@@ -399,18 +375,17 @@ a {
         "cookie4 cookie4"
         "cookie5 cookie5"
         "footer footer";
-    /* grid-gap: 0.2rem; */
     font-weight: 800;
     font-size: 12px;
     color: rgb(92, 50, 50);
     text-align: center;
 }
-
+/* To style the nutrition pictures */
 #nutrients{
   width: 25%;
   margin: 20px;
 }
-
+/* To create the layout for the shop page */
 .shop_container{
   display: grid;
   height: 150vh;
@@ -420,16 +395,18 @@ a {
       "main main"
       "cards cards"
       "footer footer";
-  /* grid-gap: 0.2rem; */
   font-weight: 800;
   font-size: 12px;
   color: rgb(92, 50, 50);
   text-align: center;
 }
+/* To style the card elements */
 .cards{
   grid-area: cards;
   text-align: center;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   background: rgb(255, 204, 179);
@@ -444,7 +421,7 @@ a {
 
 .cards li {
   display: inline-block;
-  padding: 1rem;
+  padding: 5px;
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -467,7 +444,7 @@ a {
 .cards li:hover a {
   color: #404040;
 }
-
+/* To change the layout of the contact page. */
 .contact_container {
   display: grid;
   height: 120vh;
@@ -480,12 +457,12 @@ a {
       "link1 link2"
       "email email"
       "footer footer";
-  /* grid-gap: 0.2rem; */
   font-weight: 800;
   font-size: 12px;
   color: rgb(92, 50, 50);
   text-align: center;
 }
+/* To put the form into the email area */
 .contact {
   grid-area: email;
   background: rgb(255, 204, 179);
@@ -493,6 +470,7 @@ a {
   padding-bottom: 10%;
   font-size: 150%;
 }
+/* To place our names in the main area */
 .creator1 {
   grid-area: name1;
   background: rgb(255, 204, 179);
@@ -531,6 +509,7 @@ a {
   padding-top: 10%;
   padding-right: 20%;
 }
+/* To decorate the link when hover*/
 a {
   color: rgb(92, 50, 50);
 }

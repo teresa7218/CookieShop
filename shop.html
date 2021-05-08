@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>  
+        <!--To import the things we need for our website such as css, jquery etc.-->
         <meta charset="utf-8">
         <title>Cookie</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
@@ -17,8 +18,10 @@
           </script>
     </head>
     <body>
+        <!--This is the whole container for the whole website so it is easier to make the grid area.-->
         <div class="shop_container">
             <main>
+                <!--Using list as menu and link them to the different html pages-->
                 <ul id="menu">
                     <li onclick="location.href = '/index.html'"><a class="top" href="#">home</a></li>
                     <li onclick="location.href = '/nutrients.html'"><a class="top" href="#">nutrients</a></li>
@@ -30,59 +33,55 @@
                     Shop
                 </h1>
             </main>
+            <!--To add card elements for each cookie to add to the cart-->
             <div class="cards">
-                <section >
-                    <ul>
-                        <div class="card" id="card1">
-                            <i class="fas fa-tags fa-2x">
-                                <h4>Chocolate Chip Cookies</h4>
-                                <p>$6.00 / THREE COOKIES</p>
-                                    <li>
-                                        <a href = "#addtocart">ADD TO CART</a>
-                                    </li>
-                            </i>
-                        </div>
-                        <div class="card" id="card2">
-                            <i class="fas fa-tags fa-2x">
-                                <h4>Frosted Sugar Cookie</h4>
-                                <p>$4.20 / THREE COOKIES</p>
-                                    <li>
-                                        <a href = "#addtocart">ADD TO CART</a>
-                                    </li>
-                            </i>
-                        </div>
-                        <div class="card" id="card3">
-                            <i class="fas fa-tags fa-2x">
-                                <h4>White Macadamia Nut Cookie</h4>
-                                <p>$7.00 / THREE COOKIES</p>
-                                    <li>
-                                        <a href = "#addtocart">ADD TO CART</a>
-                                    </li>
-                            </i>
-                        </div>
-
-                        <div class="card" id="card4">
-                            <i class="fas fa-tags fa-2x">
-                                <h4>Oatmeal Raisin Cookie</h4>
-                                <p>$5.25 / THREE COOKIES</p>
-                                    <li>
-                                        <a href = "#addtocart">ADD TO CART</a>
-                                    </li>
-                            </i>
-                        </div>
-
-                        <div class="card" id="card5">
-                            <i class="fas fa-tags fa-2x">
-                                <h4>Double Chocolate Chip Cookie</h4>
-                                <p>$6.75 / THREE COOKIES</p>
-                                    <li>
-                                        <a href = "#addtocart">ADD TO CART</a>
-                                    </li>
-                            </i>
-                        </div>
-                    </ul>
-                </section> 
+                <div class="card" id="card1">
+                    <i class="fas fa-tags fa-2x">
+                        <h4>Chocolate Chip Cookies</h4>
+                        <p>$6.00 / THREE COOKIES</p>
+                            <li>
+                                <a href = "#addtocart">ADD TO CART</a>
+                            </li>
+                    </i>
+                </div>
+                <div class="card" id="card2">
+                    <i class="fas fa-tags fa-2x">
+                        <h4>Frosted Sugar Cookie</h4>
+                        <p>$4.20 / THREE COOKIES</p>
+                            <li>
+                                <a href = "#addtocart">ADD TO CART</a>
+                            </li>
+                    </i>
+                </div>
+                <div class="card" id="card3">
+                    <i class="fas fa-tags fa-2x">
+                        <h4>White Macadamia Nut Cookie</h4>
+                        <p>$7.00 / THREE COOKIES</p>
+                            <li>
+                                <a href = "#addtocart">ADD TO CART</a>
+                            </li>
+                    </i>
+                </div>
+                <div class="card" id="card4">
+                    <i class="fas fa-tags fa-2x">
+                        <h4>Oatmeal Raisin Cookie</h4>
+                        <p>$5.25 / THREE COOKIES</p>
+                            <li>
+                                <a href = "#addtocart">ADD TO CART</a>
+                            </li>
+                    </i>
+                </div>
+                <div class="card" id="card5">
+                    <i class="fas fa-tags fa-2x">
+                        <h4>Double Chocolate Chip Cookie</h4>
+                        <p>$6.75 / THREE COOKIES</p>
+                            <li>
+                                <a href = "#addtocart">ADD TO CART</a>
+                            </li>
+                    </i>
+                </div>  
             </div>
+            <!--Our sponsor's, Bob Ross, quote.-->
             <footer>
                 <p><span class=quote>“This is your world <br>
                     You’re the creator<br>
